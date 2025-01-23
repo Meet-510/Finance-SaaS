@@ -54,9 +54,22 @@ export const Navigation = () => {
             outline-none text-white focus:bg-white/30 transition
             "
           >
-            <Menu />
+            <Menu className="size-4" />
           </Button>
         </SheetTrigger>
+        <SheetContent side="left" className="px-2">
+          <nav className="flex flex-col gap-y-2 pt-6">
+            {routes.map((route) => (
+              <Button
+                key={route.href}
+                variant={route.href === pathname ? "secondary" : "ghost"}
+                onClick={() => onClick(route.href)}
+              >
+                {route.label}
+              </Button>
+            ))}
+          </nav>
+        </SheetContent>
       </Sheet>
     );
   }
