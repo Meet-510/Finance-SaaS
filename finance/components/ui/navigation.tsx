@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { NavButton } from "./nav-button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useMedia } from "react-use";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { Button } from "./button";
 
 const routes = [
@@ -64,6 +64,7 @@ export const Navigation = () => {
                 key={route.href}
                 variant={route.href === pathname ? "secondary" : "ghost"}
                 onClick={() => onClick(route.href)}
+                className="w-full justify-start"
               >
                 {route.label}
               </Button>
