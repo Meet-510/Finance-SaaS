@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1738254552256,
+      "tag": "0000_absurd_lyja",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1738258802028,
+      "tag": "0001_clumsy_epoch",
+      "breakpoints": true
+    }
+  ]
+}
